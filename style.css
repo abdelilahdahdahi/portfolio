@@ -40,6 +40,35 @@ body {
     color: #185ADB;
 }
 
+#intro {
+    animation: typing 3s infinite;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+@keyframes typing {
+    0%{
+        text-indent: 0;
+    }
+    25%{
+        text-indent: -100%;
+        content: "Hi, I'm Abdelilah";
+    }
+    50%{
+        text-indent: -100%;
+        content: "Hi, I'm a frontend developer";       
+    }
+    75%{
+        text-indent: -100%;
+        content: "Hi, I'm a designer";
+    }
+    100%{
+        text-indent: -100%;
+        content: "Hi, I'm a gym rat";
+    }
+}
+
 .column1, .column2 {
     width: 100%;
     margin-top: 70px;
