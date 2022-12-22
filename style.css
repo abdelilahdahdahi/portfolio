@@ -40,35 +40,6 @@ body {
     color: #185ADB;
 }
 
-#intro {
-    animation: typing 3s infinite;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-
-}
-@keyframes typing {
-    0%{
-        text-indent: 0;
-    }
-    25%{
-        text-indent: -100%;
-        content: "Hi, I'm Abdelilah";
-    }
-    50%{
-        text-indent: -100%;
-        content: "Hi, I'm a frontend developer";       
-    }
-    75%{
-        text-indent: -100%;
-        content: "Hi, I'm a designer";
-    }
-    100%{
-        text-indent: -100%;
-        content: "Hi, I'm a gym rat";
-    }
-}
-
 .column1, .column2 {
     width: 100%;
     margin-top: 70px;
@@ -100,6 +71,83 @@ nav {
 .logo {
     width: 60px;
 }
+
+/* ---- Text animation ---- */
+.wrapper{
+    display: flex;
+  }
+.wrapper .static-txt {
+    color: #fff;
+    font-size: 60px;
+    /*font-weight: 400;*/
+}
+.wrapper .dynamic-txt {
+    margin-left: 15px;
+    height: 90px;
+    line-height: px;
+    overflow: hidden;
+}
+.dynamic-txt li {
+    list-style: none;
+    color: #FFF;
+    font-size: 60px;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+    100%{
+      top: -360px;
+    }
+}
+.dynamic-txt li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 50%;
+  }
+  .dynamic-txt li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 101%;
+    width: 100%;
+    background: #080808;
+    border-left: 2px solid #185ADB;
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+}
+
+/*.dynamic-txt {
+    list-style: none;
+    margin-left: 20px;
+}
+.dynamic-txt li span {
+    position: relative;
+}
+.dynamic-txt li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: #080808;
+    height: 101%;
+    width: 100%;
+    border-left: 2px solid #185ADB;
+    animation: slide 2s steps(5) infinite;
+    top: 0;
+}
+@keyframes slide {
+    100%{
+        top: -360px
+    }
+}
+*/
 
 nav ul li {
     display: inline-block;
@@ -287,7 +335,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #185ADB);
+    background: linear-gradient(rgba(0,0,0,0.6), #080808);
     border-radius: 10px;
     position: absolute;
     left: 0;
