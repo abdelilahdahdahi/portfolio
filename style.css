@@ -73,56 +73,7 @@ nav {
 }
 
 /* ---- Text animation ---- */
-.wrapper{
-    display: flex;
-  }
-.wrapper .static-txt {
-    color: #fff;
-    font-size: 60px;
-    /*font-weight: 400;*/
-}
-.wrapper .dynamic-txt {
-    margin-left: 15px;
-    height: 90px;
-    line-height: px;
-    overflow: hidden;
-}
-.dynamic-txt li {
-    list-style: none;
-    color: #FFF;
-    font-size: 60px;
-    position: relative;
-    top: 0;
-    animation: slide 12s steps(4) infinite;
-}
-@keyframes slide {
-    100%{
-      top: -360px;
-    }
-}
-.dynamic-txt li span{
-    position: relative;
-    margin: 5px 0;
-    line-height: 50%;
-  }
-  .dynamic-txt li span::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 101%;
-    width: 100%;
-    background: #080808;
-    border-left: 2px solid #185ADB;
-    animation: typing 3s steps(10) infinite;
-  }
-  @keyframes typing {
-    40%, 60%{
-      left: calc(100% + 30px);
-    }
-    100%{
-      left: 0;
-    }
-}
+
 
 /*.dynamic-txt {
     list-style: none;
@@ -199,6 +150,9 @@ nav ul li a:hover::after {
 .about-col-2 {
     flex-basis: 60%;
 }
+.about-col-2 p {
+    font-size: 18px;
+}
 
 .sub-title {
     font-size: 60px;
@@ -238,7 +192,7 @@ nav ul li a:hover::after {
 }
 .tab-contents ul li span {
     color: #39A9CB;
-    font-size: 14px;
+    font-size: 18px;
 }
 .tab-contents {
     display: none;
@@ -250,6 +204,8 @@ nav ul li a:hover::after {
 .same-line {
     display: inline-block;
 }
+
+
 
 /* ----- Skills ---- */
 
@@ -335,7 +291,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #080808);
+    background: linear-gradient(rgba(0,0,0,0.6), #185ADB);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -356,7 +312,7 @@ nav ul li a:hover::after {
 }
 .layer a {
     margin-top: 20px;
-    color: #080808;
+    color: #185ADB;
     text-decoration: none;
     font-size: 20px;
     line-height: 60px;
@@ -441,6 +397,12 @@ form .btn2 {
     margin-top: 30px;
 }
 
+#msg {
+    color: green;
+    margin-top: -10px;
+    display: block;
+}
+
 .copyright {
     width: 100%;
     text-align: center;
@@ -462,17 +424,88 @@ form .btn2 {
     font-size: 19px;
 }
 
-/* ---- Responsiveness ---- */
+/* ---- RESPONSIVENESS ---- */
+
+/* ---- FOR LAPTOPS ---- */
+/* to active the text animation on laptop screens */
+@media only screen and (min-width: 768px) {
+    .wrapper{
+        display: flex;
+    }
+    .wrapper .static-txt {
+        color: #fff;
+        font-size: 60px;
+    }
+    .wrapper .dynamic-txt {
+        margin-left: 15px;
+        height: 90px;
+        line-height: px;
+        overflow: hidden;
+    }
+    .dynamic-txt li {
+        list-style: none;
+        color: #FFF;
+        font-size: 60px;
+        position: relative;
+        top: 0;
+        animation: slide 12s steps(4) infinite;
+    }
+    @keyframes slide {
+        100%{
+        top: -360px;
+        }
+    }
+    .dynamic-txt li span{
+        position: relative;
+        margin: 5px 0;
+        line-height: 50%;
+    }
+    .dynamic-txt li span::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 101%;
+        width: 100%;
+        background: #080808;
+        border-left: 2px solid #185ADB;
+        animation: typing 3s steps(10) infinite;
+    }
+    @keyframes typing {
+        40%, 60%{
+        left: calc(100% + 30px);
+        }
+        100%{
+        left: 0;
+        }
+    }
+}
+
 
 /* .fa-solid is the class of the "menu" and "close" icon */
 nav .fa-solid {
     display: none;
 }
 
+/* ----- Responsiveness for MOBILES ----- */
 @media only screen and (max-width: 600px) {
-    #header {
-        background-image: url(); /* url phone-image must be added */
+    #programmer {
+        display: none;
     }
+
+    .wrapper h1, ul {
+        display: inline-block;
+    }
+    #abdelilah {
+
+    }
+
+    .dynamic-txt {
+        list-style-type: none;
+    }
+    .extra-list {
+        display: none;
+    }
+    
     .header-text {
         margin-top: 100%;
         font-size: 16px;
@@ -532,8 +565,3 @@ nav .fa-solid {
     }
 }
 
-#msg {
-    color: green;
-    margin-top: -10px;
-    display: block;
-}
