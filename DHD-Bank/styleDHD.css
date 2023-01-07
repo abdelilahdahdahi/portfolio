@@ -1,0 +1,191 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat';
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+p {
+    color: #8F8F9F;
+}
+
+/* Headings */
+
+.big-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+}
+
+#title {
+    background-color: #0008C1;
+    color: white;
+    text-align: left;
+}
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+#phone {
+    transform: rotate(25deg);
+    width: 60%;
+    position: absolute;
+    right: 30%;
+}
+
+/* CSS Media Query: a block of CSS properties 
+   that's applied under a certain condition 
+
+    In this case any device with a max screen
+    width of 1028px will center the text
+    and rotate the image.
+*/
+
+   @media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+    #phone {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+/* Navigation Bar */
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Download button */
+
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+
+/* Features Section */
+
+#features {
+    background-color: white;
+    position: relative;
+}
+
+.feature-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 5%;
+}
+
+.icon {
+    color: #0008C1;
+    margin-bottom: 1rem;
+}
+.icon:hover {
+    color: gray;
+}
+
+/* Testimonial section */
+
+#testimonials {
+    background-color: #0008C1;
+    color: #ffff;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press {
+    background-color: #0008C1;
+    padding-bottom: 3%;
+}
+
+.press-image {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+
+/* Pricing section */
+
+#pricing {
+    padding: 100px;
+}
+
+.price-text {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+
+/* CTA section */
+
+#cta {
+    background-color: #0008C1;
+    color: white;
+}
+
+#cta-caption {
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+
+/* Footer section */
+
+#footer {
+    background-color: #fff;
+}
+
+.footer-icons {
+    margin: 20px 10px;
+}
