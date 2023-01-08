@@ -1,10 +1,3 @@
-/* 
-CSS reset. Different browsers use different default margins, 
-causing sites to look different by margins. The * means "all elements"
-(a universal selector), so we are setting all elements to have 
-zero margins, and zero padding.
-*/
-
 * {
     margin: 0;
     padding: 0;
@@ -71,34 +64,6 @@ nav {
 .logo {
     width: 60px;
 }
-
-/* ---- Text animation ---- */
-
-
-/*.dynamic-txt {
-    list-style: none;
-    margin-left: 20px;
-}
-.dynamic-txt li span {
-    position: relative;
-}
-.dynamic-txt li span::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    background: #080808;
-    height: 101%;
-    width: 100%;
-    border-left: 2px solid #185ADB;
-    animation: slide 2s steps(5) infinite;
-    top: 0;
-}
-@keyframes slide {
-    100%{
-        top: -360px
-    }
-}
-*/
 
 nav ul li {
     display: inline-block;
@@ -398,7 +363,7 @@ form .btn2 {
 }
 
 #msg {
-    color: green;
+    color: #ADE792;
     margin-top: -10px;
     display: block;
 }
@@ -407,7 +372,7 @@ form .btn2 {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    /*background: #262626;*/
+    background: #262626;
     font-weight: 300;
     margin-top: 20px;
 }
@@ -564,4 +529,3 @@ nav .fa-solid {
         width: 40px;
     }
 }
-
