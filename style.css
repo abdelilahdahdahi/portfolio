@@ -1,3 +1,10 @@
+/* 
+CSS reset. Different browsers use different default margins, 
+causing sites to look different by margins. The * means "all elements"
+(a universal selector), so we are setting all elements to have 
+zero margins, and zero padding.
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -64,6 +71,34 @@ nav {
 .logo {
     width: 60px;
 }
+
+/* ---- Text animation ---- */
+
+
+/*.dynamic-txt {
+    list-style: none;
+    margin-left: 20px;
+}
+.dynamic-txt li span {
+    position: relative;
+}
+.dynamic-txt li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: #080808;
+    height: 101%;
+    width: 100%;
+    border-left: 2px solid #185ADB;
+    animation: slide 2s steps(5) infinite;
+    top: 0;
+}
+@keyframes slide {
+    100%{
+        top: -360px
+    }
+}
+*/
 
 nav ul li {
     display: inline-block;
@@ -316,6 +351,10 @@ nav ul li a:hover::after {
     margin-right: 15px;
     font-size: 25px;
 }
+.contact-left p span {
+    font-size: 22px;
+    color: #39A9CB;
+}
 
 .contact-right {
     flex-basis: 60%;
@@ -392,7 +431,7 @@ form .btn2 {
 /* ---- RESPONSIVENESS ---- */
 
 /* ---- FOR LAPTOPS ---- */
-/* to active the text animation on laptop screens */
+/* to active the text animation on laptop screens 
 @media only screen and (min-width: 768px) {
     .wrapper{
         display: flex;
@@ -444,6 +483,7 @@ form .btn2 {
         }
     }
 }
+*/
 
 
 /* .fa-solid is the class of the "menu" and "close" icon */
@@ -460,9 +500,6 @@ nav .fa-solid {
     .wrapper h1, ul {
         display: inline-block;
     }
-    #abdelilah {
-
-    }
 
     .dynamic-txt {
         list-style-type: none;
@@ -473,10 +510,10 @@ nav .fa-solid {
     
     .header-text {
         margin-top: 100%;
-        font-size: 16px;
+        font-size: 20px;
     }
     .header-text h1 {
-        font-size: 30px;
+        font-size: 50px;
     }
     nav .fa-solid {
         display: block;
@@ -503,6 +540,13 @@ nav .fa-solid {
         left: 25px;
         cursor: pointer;
     }
+
+    /* Burger menu */
+    nav .fa-bars {
+        margin-right: -40px;
+        font-size: 35px;
+    }
+    
     .sub-title {
         font-size: 40px;
     }
@@ -526,6 +570,7 @@ nav .fa-solid {
         font-size: 14px;
     }
     .logo {
-        width: 40px;
+        width: 50px;
     }
 }
+
