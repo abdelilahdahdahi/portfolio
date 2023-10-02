@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initiale-scale=1.0">
+  <title>Abdelilah Dahdahi</title>
+
+  <!-- style.css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/a54938a43e.js" crossorigin="anonymous"></script>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <a href="#header"><img class="logo" src="images/Logo.png" alt="AD"></a>
+        <ul id="sidemenu">
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="row">
+        <div class="column1">
+          <div class="header-text">
+            <h1>Hi, I'm <span>Abdelilah</span></h1>
+            <p>portfolio not updated*</p>
+          </div>
+        </div>
+        <div class="column2">
+          <div>
+            <img id="programmer" src="images/programmer.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---- SKILLS ---->
+  <div id="skills">
+    <div class="container">
+      <h1 class="sub-title">Skills</h1>
+      <div class="skills-list">
+
+        <div class="skills-card">
+          <h2>Front end</h2>
+          <ul>
+            <li>
+              <img class="skills-icons" src="images/html5.png" alt="html">
+            </li>
+            <li>
+              <img class="skills-icons" src="images/css.png" alt="css">
+            </li>
+            <li>
+              <img class="skills-icons" src="images/bootstrap.png" alt="bootstrap">
+            </li>
+            <li>
+              <img class="skills-icons" src="images/javascript.png" alt="javascript">
+            </li>
+            <li>
+              <img width="65px" src="images/jquery.png" alt="jquery">
+            </li>
+          </ul>
+        </div>
+
+        <div class="skills-card">
+          <h2>Back end</h2>
+          <ul>
+            <li>
+              <img width="90px" src="images/mysql.png" alt="mySQL">
+            </li>
+          </ul>
+        </div>
+
+        <div class="skills-card">
+          <h2>In progress</h2>
+          <ul>
+            <li>
+              <img width="80px" src="images/nodejs.png" alt="nodejs">
+            </li>
+            <li>
+              <img width="60px" src="images/express.webp" alt="express">
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!---- MY PROJECTS ---->
+  <div id="portfolio">
+    <!-- 1st container -->
+    <div class="container">
+      <h1 class="sub-title">Projects</h1>
+      <div class="work-list">
+        <!-- Project 1 -->
+        <div class="work">
+          <img src="images/dhdbank.jpg">
+          <div class="layer">
+            <h3>DHD Bank Website</h3>
+            <p>Github repository</p>
+            <a href="https://github.com/abdelilahdahdahi/DHD-Bank-Website-MVP" target="_blank"><i
+                class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="work">
+          <img src="images/simongame.jpg">
+          <div class="layer">
+            <h3>Simon Game</h3>
+            <p>Github repository</p>
+            <a href="https://github.com/abdelilahdahdahi/Simon-Game" target="_blank"><i
+                class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="work">
+          <img src="images/drumkit.jpg">
+          <div class="layer">
+            <h3>Drum Kit</h3>
+            <p>Github repository</p>
+            <a href="https://github.com/abdelilahdahdahi/Drum-Kit" target="_blank"><i
+                class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Second container -->
+    <div class="container">
+      <div class="work-list">
+        <!-- Project 1 -->
+        <div class="work">
+          <img src="images/dicegame.jpg">
+          <div class="layer">
+            <h3>Dice Game</h3>
+            <p>Github repository</p>
+            <a href="https://github.com/abdelilahdahdahi/Dice-Game" target="_blank"><i
+                class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="work">
+          <img src="images/quizland.jpg">
+          <div class="layer">
+            <h3>Quiz Land</h3>
+            <p>Github repository</p>
+            <a href="https://github.com/abdelilahdahdahi/QuizLand-App-Flutter" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="work">
+          <img src="images/hangman.jpg">
+          <div class="layer">
+            <h3>Hangman Game</h3>
+            <p>Github repository</p>
+            <a href="https://github.com/abdelilahdahdahi/Hangman-game" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!---- ABOUT ---->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/aboutme.svg" alt="myPicture">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Enthusiast and self-taught developer, with a Computer Science & IT background, 
+            I'm currently pursuing specialised studies in Software Solutions and Business 
+            Applications at CNED. Driven by a passion for continuous learning and improvement, 
+            I'm seeking to work with ambitious and visionary individuals to create positive 
+            social impacts through technology</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+            <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+          </div>
+          <!-- Education -->
+          <div class="tab-contents active-tab" id="education">
+            <ul>
+              <li class="same-line"><img src="images/cned.svg" width="60px"></li>
+              <li class="same-line">BTS SIO CNED, France<br><span>October 2022 - 2024</span></li>
+              <li>
+                <p>Software Solutions & Business Applications.</p>
+              </li>
+              <li class="same-line edu-logo"><img src="images/veronatrento.png" width="50px"></li>
+              <li class="same-line edu-logo">IIS Verona Trento, Italy<br><span>September 2020 - June 2022</span></li>
+              <li>
+                <p>Computer Science & IT.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Experience -->
+          <div class="tab-contents" id="certifications">
+            <ul>
+              <li><span>GDPR - General Data Protection Regulation Workshop</span></li>
+              <li>
+                <p>Issued Feb 2023 by CNIL - National Commission on Informatics and Liberty, France </p>
+              </li>
+            </ul>
+            
+            <ul>
+              <li><span>B2 English Europe Level</span></li>
+              <li>
+                <p>Issued Jul 2021 by Cambridge Assessment International Education, Italy </p>
+              </li>
+            </ul>
+
+            <ul>
+              <li><span>CCNA - Switching, Routing and Wireless Essentials</span></li>
+              <li>
+                <p>Issued Jun 2022 by Cisco, Italy </p>
+              </li>
+            </ul>
+
+            <ul>
+              <li><span>Cisco IT Essentials</span></li>
+              <li>
+                <p>Issued Jun 2021 by Cisco, Italy </p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Hobbies -->
+          <div class="tab-contents" id="hobbies">
+            <ul>
+              <li><span>Sport</span><br>
+                <p>Weighted calisthenics, bodybuilding and football</p>
+              </li>
+              <li><span>Intellectual pursuits</span><br>
+                <p>Reading, marketing, personal growth, startup culture</p>
+              </li>
+              <li><span>Content creation</span><br>
+                <p>I share what I learn with a community interested in software development</p>
+              </li>
+            </ul>
+          </div>
+          <a href="docs/myCV.pdf" target="_blank" class="btn btn2">Check my resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---- CONTACT  ---->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact me</h1>
+          <p><i class="fa-solid fa-envelope"></i>dahdahi.contact@gmail.com</p>
+          <p><i class="fa-solid fa-location-dot"></i>Vernouillet, France</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/abdelilah-dahdahi-b6a4b4207/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/abdelilahdahdahi" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/iamDahdahi" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet" action="">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+            <button type="submit" class="btn btn2" name="submit">Send</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Abdelilah Dahdahi · © 2023</p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
